@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   description: "Soumya Portfolio",
   keywords: ["portfolio", "project manager"],
   authors: [{ name: "Soumya", url: "https://maybetarun.in" }],
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({

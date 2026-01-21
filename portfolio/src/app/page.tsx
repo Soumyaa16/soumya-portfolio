@@ -77,121 +77,130 @@ export default function Home() {
               <div className="flex flex-col gap-20 px-4 md:px-8">
 
                 {/* Card 1 */}
-                <motion.div
-                  className="sticky mt-[16vh] top-[16vh] h-fit md:h-[60vh] bg-[#FFF2BD] rounded-4xl md:rounded-[3rem]"
-                  style={{
-                    scale: useTransform(
-                      scrollYProgress,
-                      [0, 0.2],
-                      [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.92 : 0.80]
-                    )
-                  }}
-                >
-                  <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
 
-                    <div className="flex-1 flex flex-col justify-center text-accent">
-                      <h3 className="text-3xl md:text-4xl font-semibold mb-3">E-Commerce Platform</h3>
-                      <p className="text-lg mb-4">Full-stack e-commerce solution with React, Node.js, and MongoDB</p>
+                <Link href="https://github.com/yourusername/ecommerce-project" target="_blank" rel="noopener noreferrer">
+                  <motion.div
+                    className="sticky mt-[16vh] top-[16vh] h-fit md:h-[60vh] bg-[#FFF2BD] rounded-4xl md:rounded-[3rem] cursor-pointer transition-transform hover:scale-[1.02]"
+                    style={{
+                      scale: useTransform(
+                        scrollYProgress,
+                        [0, 0.2],
+                        [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.92 : 0.80]
+                      )
+                    }}
+                  >
+                    <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
+
+                      <div className="flex-1 flex flex-col justify-center text-accent">
+                        <h3 className="text-3xl md:text-4xl font-semibold mb-3">E-Commerce Platform</h3>
+                        <p className="text-lg mb-4">Full-stack e-commerce solution with React, Node.js, and MongoDB</p>
+                      </div>
+
+                      <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
+                        <Image
+                          src="/test.png"
+                          alt="E-Commerce Screenshot"
+                          width={600}
+                          height={400}
+                        />
+                      </div>
+
                     </div>
-
-                    <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
-                      <Image
-                        src="/test.png"
-                        alt="E-Commerce Screenshot"
-                        width={600}
-                        height={400}
-                      />
-                    </div>
-
-                  </div>
-                </motion.div>
+                  </motion.div>
+                </Link>
 
                 {/* Card 2 */}
-                <motion.div
-                  className="sticky top-[19vh] md:top-[20vh] h-fit md:h-[60vh] bg-[#C7E0F9] rounded-4xl md:rounded-[3rem]"
-                  style={{
-                    scale: useTransform(
-                      scrollYProgress,
-                      [0, 0.2],
-                      [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.94 : 0.85]
-                    )
-                  }}
-                >
-                  <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
+                <Link href="https://github.com/yourusername/task-management" target="_blank" rel="noopener noreferrer">
+                  <motion.div
+                    className="sticky top-[19vh] md:top-[20vh] h-fit md:h-[60vh] bg-[#C7E0F9] rounded-4xl md:rounded-[3rem] cursor-pointer transition-transform hover:scale-[1.02]"
+                    style={{
+                      scale: useTransform(
+                        scrollYProgress,
+                        [0, 0.2],
+                        [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.94 : 0.85]
+                      )
+                    }}
+                  >
+                    <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
 
-                    <div className="flex-1 flex flex-col justify-center text-accent">
-                      <h3 className="text-3xl md:text-4xl font-semibold mb-3">Task Management App</h3>
-                      <p className="text-lg mb-4">Collaborative task management with real-time updates</p>
-                    </div>
+                      <div className="flex-1 flex flex-col justify-center text-accent">
+                        <h3 className="text-3xl md:text-4xl font-semibold mb-3">Task Management App</h3>
+                        <p className="text-lg mb-4">Collaborative task management with real-time updates</p>
+                      </div>
 
-                    <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
-                      <Image
-                        src="/test.png"
-                        alt="E-Commerce Screenshot"
-                        width={600}
-                        height={400}
-                      />
+                      <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
+                        <Image
+                          src="/test.png"
+                          alt="E-Commerce Screenshot"
+                          width={600}
+                          height={400}
+                        />
+                      </div>
                     </div>
-                  </div>
-                </motion.div>
+                  </motion.div>
+                </Link>
 
                 {/* Card 3 */}
-                <motion.div
-                  className="sticky top-[22vh] md:top-[24vh] h-fit md:h-[60vh] bg-[#D8C1F4] rounded-4xl md:rounded-[3rem]"
-                  style={{
-                    scale: useTransform(
-                      scrollYProgress,
-                      [0, 0.2],
-                      [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.96 : 0.90]
-                    )
-                  }}
-                >
-                  <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
+                <Link href="https://github.com/yourusername/ai-chat-app" target="_blank" rel="noopener noreferrer">
+                  <motion.div
+                    className="sticky top-[22vh] md:top-[24vh] h-fit md:h-[60vh] bg-[#D8C1F4] rounded-4xl md:rounded-[3rem] cursor-pointer transition-transform hover:scale-[1.02]"
+                    style={{
+                      scale: useTransform(
+                        scrollYProgress,
+                        [0, 0.2],
+                        [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.96 : 0.90]
+                      )
+                    }}
+                  >
+                    <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
 
-                    <div className="flex-1 flex flex-col justify-center text-accent">
-                      <h3 className="text-3xl md:text-4xl font-semibold mb-3">AI Chat Application</h3>
-                      <p className="text-lg mb-4">Intelligent chatbot with natural language processing</p>
-                    </div>
+                      <div className="flex-1 flex flex-col justify-center text-accent">
+                        <h3 className="text-3xl md:text-4xl font-semibold mb-3">AI Chat Application</h3>
+                        <p className="text-lg mb-4">Intelligent chatbot with natural language processing</p>
+                      </div>
 
-                    <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
-                      <Image
-                        src="/test.png"
-                        alt="E-Commerce Screenshot"
-                        width={600}
-                        height={400}
-                      />
+                      <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
+                        <Image
+                          src="/test.png"
+                          alt="E-Commerce Screenshot"
+                          width={600}
+                          height={400}
+                        />
+                      </div>
                     </div>
-                  </div>
-                </motion.div>
+                  </motion.div>
+                </Link>
 
                 {/* Card 4 */}
-                <motion.div
-                  className="sticky top-[25vh] md:top-[28vh] h-fit md:h-[60vh] bg-[#D0D4DE] rounded-4xl md:rounded-[3rem]"
-                  style={{
-                    scale: useTransform(
-                      scrollYProgress,
-                      [0, 0.2],
-                      [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.98 : 0.95]
-                    )
-                  }}
-                >
-                  <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
+                <Link href="https://github.com/yourusername/portfolio" target="_blank" rel="noopener noreferrer">
+                  <motion.div
+                    className="sticky top-[25vh] md:top-[28vh] h-fit md:h-[60vh] bg-[#D0D4DE] rounded-4xl md:rounded-[3rem] cursor-pointer transition-transform hover:scale-[1.02]"
+                    style={{
+                      scale: useTransform(
+                        scrollYProgress,
+                        [0, 0.2],
+                        [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.98 : 0.95]
+                      )
+                    }}
+                  >
+                    <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
 
-                    <div className="flex-1 flex flex-col justify-center text-accent">
-                      <h3 className="text-3xl md:text-4xl font-semibold mb-3">Portfolio Website</h3>
-                      <p className="text-lg mb-4">Modern portfolio with smooth animations and responsive design</p>
-                    </div>
+                      <div className="flex-1 flex flex-col justify-center text-accent">
+                        <h3 className="text-3xl md:text-4xl font-semibold mb-3">Portfolio Website</h3>
+                        <p className="text-lg mb-4">Modern portfolio with smooth animations and responsive design</p>
+                      </div>
 
-                    <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
-                      <Image
-                        src="/test.png"
-                        alt="E-Commerce Screenshot"
-                        width={600}
-                        height={400}
-                      />
+                      <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
+                        <Image
+                          src="/test.png"
+                          alt="E-Commerce Screenshot"
+                          width={600}
+                          height={400}
+                        />
+                      </div>
                     </div>
-                  </div>
-                </motion.div>
+                  </motion.div>
+                </Link>
 
                 {/* Card 5 */}
                 <motion.div
@@ -311,7 +320,7 @@ export default function Home() {
                 { text: "LINKEDIN", icon: <Linkedin className="w-6 h-6" />, href: "https://www.linkedin.com/in/soumyadubeyy/" },
                 { text: "INSTAGRAM", icon: <Instagram className="w-6 h-6" />, href: "https://www.instagram.com/yourprofile" },
                 { text: "TWITTER / X", icon: <Envelope className="w-6 h-6" />, href: "https://twitter.com/yourprofile" },
-                { text: "EMAIL", icon: <Envelope className="w-6 h-6" />, href: "kdsoumya10@gmail.com" },
+                { text: "EMAIL", icon: <Envelope className="w-6 h-6" />, href: "mailto:kdsoumya10@gmail.com" },
               ].map((item, i) => (
                 <a
                   key={i}
