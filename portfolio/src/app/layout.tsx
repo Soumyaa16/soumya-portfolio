@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Soumya",
   description: "Soumya Portfolio",
   keywords: ["portfolio", "project manager"],
-  authors: [{ name: "Soumya", url: "https://maybetarun.in" }],
+  authors: [{ name: "Soumya", url: "https://soumyaya.vercel.app/" }],
   icons: {
     icon: '/favicon.png',
   },

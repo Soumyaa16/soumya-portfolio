@@ -6,6 +6,54 @@ import { Revo, Linkedin, Envelope, Instagram } from "revoicons";
 import Button from "@/components/Button";
 import Link from "next/link";
 import Image from "next/image";
+import { IconCloud } from "@/components/ui/icon-cloud";
+
+
+const slugs = [
+  "typescript",
+  "javascript",
+  "dart",
+  "java",
+  "react",
+  "flutter",
+  "android",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "amazonaws",
+  "postgresql",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "cypress",
+  "docker",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "sonarqube",
+  "figma",
+];
+
+function IconCloudDemo() {
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
+  );
+
+  return (
+    <div className="relative flex size-full items-center justify-center overflow-hidden">
+      <IconCloud images={images} />
+    </div>
+  );
+}
+
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -67,7 +115,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="w-full max-w-7xl mx-auto px-4">
+      <div className="w-full">
 
         <div className="w-full">
 
@@ -77,55 +125,61 @@ export default function Home() {
               <div className="flex flex-col gap-20 px-4 md:px-8">
 
                 {/* Card 1 */}
-
-                <Link href="https://github.com/yourusername/ecommerce-project" target="_blank" rel="noopener noreferrer">
-                  <motion.div
-                    className="sticky mt-[16vh] top-[16vh] h-fit md:h-[60vh] bg-[#FFF2BD] rounded-4xl md:rounded-[3rem] cursor-pointer transition-transform hover:scale-[1.02]"
-                    style={{
-                      scale: useTransform(
-                        scrollYProgress,
-                        [0, 0.2],
-                        [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.92 : 0.80]
-                      )
-                    }}
+                <motion.div
+                  className="sticky mt-[16vh] top-[16vh] h-fit md:h-[60vh] bg-[#FFF2BD] rounded-4xl md:rounded-[3rem]"
+                  style={{
+                    scale: useTransform(
+                      scrollYProgress,
+                      [0, 0.2],
+                      [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.92 : 0.80]
+                    )
+                  }}
+                >
+                  <Link
+                    href="https://github.com/Soumyaa16/AstroChat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block h-full w-full"
                   >
                     <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
-
                       <div className="flex-1 flex flex-col justify-center text-accent">
-                        <h3 className="text-3xl md:text-4xl font-semibold mb-3">E-Commerce Platform</h3>
-                        <p className="text-lg mb-4">Full-stack e-commerce solution with React, Node.js, and MongoDB</p>
+                        <h3 className="text-3xl md:text-4xl font-semibold mb-3">AstroChat</h3>
+                        <p className="text-lg mb-4">Astro theme chatbot using T5 model</p>
                       </div>
 
                       <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
                         <Image
-                          src="/test.png"
-                          alt="E-Commerce Screenshot"
-                          width={600}
-                          height={400}
+                          src="/card1-img.png"
+                          alt="card1"
+                          width={500}
+                          height={500}
                         />
                       </div>
-
                     </div>
-                  </motion.div>
-                </Link>
+                  </Link>
+                </motion.div>
 
                 {/* Card 2 */}
-                <Link href="https://github.com/yourusername/task-management" target="_blank" rel="noopener noreferrer">
-                  <motion.div
-                    className="sticky top-[19vh] md:top-[20vh] h-fit md:h-[60vh] bg-[#C7E0F9] rounded-4xl md:rounded-[3rem] cursor-pointer transition-transform hover:scale-[1.02]"
-                    style={{
-                      scale: useTransform(
-                        scrollYProgress,
-                        [0, 0.2],
-                        [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.94 : 0.85]
-                      )
-                    }}
+                <motion.div
+                  className="sticky top-[19vh] md:top-[20vh] h-fit md:h-[60vh] bg-[#C7E0F9] rounded-4xl md:rounded-[3rem]"
+                  style={{
+                    scale: useTransform(
+                      scrollYProgress,
+                      [0, 0.2],
+                      [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.94 : 0.85]
+                    )
+                  }}
+                >
+                  <Link
+                    href="https://github.com/Soumyaa16/Kidney-Stone-Detection-Model"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block h-full w-full"
                   >
                     <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
-
                       <div className="flex-1 flex flex-col justify-center text-accent">
-                        <h3 className="text-3xl md:text-4xl font-semibold mb-3">Task Management App</h3>
-                        <p className="text-lg mb-4">Collaborative task management with real-time updates</p>
+                        <h3 className="text-3xl md:text-4xl font-semibold mb-3">Kidney Stone Detection</h3>
+                        <p className="text-lg mb-4">Kidney stone detection model using YOLOv9</p>
                       </div>
 
                       <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
@@ -137,26 +191,31 @@ export default function Home() {
                         />
                       </div>
                     </div>
-                  </motion.div>
-                </Link>
+                  </Link>
+                </motion.div>
+
 
                 {/* Card 3 */}
-                <Link href="https://github.com/yourusername/ai-chat-app" target="_blank" rel="noopener noreferrer">
-                  <motion.div
-                    className="sticky top-[22vh] md:top-[24vh] h-fit md:h-[60vh] bg-[#D8C1F4] rounded-4xl md:rounded-[3rem] cursor-pointer transition-transform hover:scale-[1.02]"
-                    style={{
-                      scale: useTransform(
-                        scrollYProgress,
-                        [0, 0.2],
-                        [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.96 : 0.90]
-                      )
-                    }}
+                <motion.div
+                  className="sticky top-[22vh] md:top-[24vh] h-fit md:h-[60vh] bg-[#D8C1F4] rounded-4xl md:rounded-[3rem]"
+                  style={{
+                    scale: useTransform(
+                      scrollYProgress,
+                      [0, 0.2],
+                      [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.96 : 0.90]
+                    )
+                  }}
+                >
+                  <Link
+                    href="https://github.com/Soumyaa16/pylib"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block h-full w-full"
                   >
                     <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
-
                       <div className="flex-1 flex flex-col justify-center text-accent">
-                        <h3 className="text-3xl md:text-4xl font-semibold mb-3">AI Chat Application</h3>
-                        <p className="text-lg mb-4">Intelligent chatbot with natural language processing</p>
+                        <h3 className="text-3xl md:text-4xl font-semibold mb-3">PyLib</h3>
+                        <p className="text-lg mb-4">Python library for library</p>
                       </div>
 
                       <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
@@ -168,23 +227,28 @@ export default function Home() {
                         />
                       </div>
                     </div>
-                  </motion.div>
-                </Link>
+                  </Link>
+                </motion.div>
+
 
                 {/* Card 4 */}
-                <Link href="https://github.com/yourusername/portfolio" target="_blank" rel="noopener noreferrer">
-                  <motion.div
-                    className="sticky top-[25vh] md:top-[28vh] h-fit md:h-[60vh] bg-[#D0D4DE] rounded-4xl md:rounded-[3rem] cursor-pointer transition-transform hover:scale-[1.02]"
-                    style={{
-                      scale: useTransform(
-                        scrollYProgress,
-                        [0, 0.2],
-                        [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.98 : 0.95]
-                      )
-                    }}
+                <motion.div
+                  className="sticky top-[25vh] md:top-[28vh] h-fit md:h-[60vh] bg-[#D0D4DE] rounded-4xl md:rounded-[3rem]"
+                  style={{
+                    scale: useTransform(
+                      scrollYProgress,
+                      [0, 0.2],
+                      [1, typeof window !== "undefined" && window.innerWidth >= 768 ? 0.98 : 0.95]
+                    )
+                  }}
+                >
+                  <Link
+                    href="https://github.com/Soumyaa16/soumya-portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block h-full w-full"
                   >
                     <div className="py-6 pl-6 h-full flex flex-col md:flex-row">
-
                       <div className="flex-1 flex flex-col justify-center text-accent">
                         <h3 className="text-3xl md:text-4xl font-semibold mb-3">Portfolio Website</h3>
                         <p className="text-lg mb-4">Modern portfolio with smooth animations and responsive design</p>
@@ -199,8 +263,9 @@ export default function Home() {
                         />
                       </div>
                     </div>
-                  </motion.div>
-                </Link>
+                  </Link>
+                </motion.div>
+
 
                 {/* Card 5 */}
                 <motion.div
@@ -217,7 +282,6 @@ export default function Home() {
                     <h3 className="text-2xl font-semibold text-accent">More Soon!</h3>
                   </div>
                 </motion.div>
-
               </div>
             </div>
           </section>
@@ -254,30 +318,8 @@ export default function Home() {
           <section id="skills" className="min-h-screen w-full flex flex-col justify-center items-center md:-mt-32">
             <h2 className="text-xl md:text-3xl text-center font-medium mb-8 md:mb-24 text-accent">Skills that help me build<br /> extraordinary products</h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-10 w-full pb-16 md:pb-0">
-              {[
-                { name: "Skill1", desc: "Lorem ipsum lorem" },
-                { name: "Skill2", desc: "Lorem ipsum lorem" },
-                { name: "Skill3", desc: "Lorem ipsum lorem" },
-                { name: "Skill4", desc: "Lorem ipsum lorem" },
-                { name: "Skill5", desc: "Lorem ipsum lorem" },
-                { name: "Skill6", desc: "Lorem ipsum lorem" },
-                { name: "Skill7", desc: "Lorem ipsum lorem" },
-                { name: "Skill8", desc: "Lorem ipsum lorem" },
-                { name: "Skill9", desc: "Lorem ipsum lorem" },
-              ].map((tool, i) => (
-                <div
-                  key={i}
-                  className="flex items-center justify-center space-x-4 p-4 md:p-2"
-                >
-                  <Revo className="w-16 md:w-12 h-16 md:h-12" color={"#242424"} />
-
-                  <div>
-                    <p className="text-lg md:text-base font-medium text-accent">{tool.name}</p>
-                    <p className="text-base md:text-sm text-accent/70">{tool.desc}</p>
-                  </div>
-                </div>
-              ))}
+            <div className="w-full max-w-4xl h-[500px]">
+              <IconCloudDemo />
             </div>
           </section>
 
@@ -289,7 +331,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
               {[
-                { text: "Working with Tarun was a fantastic experience. He delivered on time and exceeded expectations.", name: "Sarah Johnson", color: "#FFF2BD", rotate: 3 },
+                { text: "Working with Soumya was a fantastic experience. He delivered on time and exceeded expectations.", name: "Sarah Johnson", color: "#FFF2BD", rotate: 3 },
                 { text: "The product design and development were seamless. Highly recommend!", name: "Michael Lee", color: "#DDE9FF", rotate: -5 },
                 { text: "Amazing attention to detail and great communication throughout.", name: "Amit Sharma", color: "#FFC2D7", rotate: 2 },
               ].map((t, i) => (
@@ -342,13 +384,13 @@ export default function Home() {
 
           <section id="footer" className="h-fit w-full px-4 pt-8 md:pt-16 pb-4">
             <div className="flex flex-row justify-between items-center text-accent/70 text-xs md:text-sm">
-              <div>©2025 - Tarun Gupta</div>
-              <div>Engineered by <Link href="https://freelance.maybetarun.in/" target="_blank"><span className="underline underline-offset-4 decoration-accent/70 cursor-pointer hover:text-accent">this guy.</span></Link></div>
+              <div>©2025 - Soumya Dubey</div>
+              <div>Engineered by <Link href="https://soumyaya.vercel.app/" target="_blank"><span className="underline underline-offset-4 decoration-accent/70 cursor-pointer hover:text-accent">this guy.</span></Link></div>
             </div>
           </section>
 
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }

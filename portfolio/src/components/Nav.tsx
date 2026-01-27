@@ -26,7 +26,7 @@ export default function Nav() {
 
       <div className="flex items-center gap-6">
         <Link
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/soumyadubeyy/"
           target="_blank"
           className="flex items-center text-gray-800 hover:text-black transition-colors text-base font-medium group"
         >
@@ -35,7 +35,7 @@ export default function Nav() {
         </Link>
 
         <Link
-          href="/resume.pdf"
+          href="https://drive.google.com/file/d/1t5wgP3Rjf-Rs31XgjcPO-BDZH3M_ii4B/view?usp=sharing"
           target="_blank"
           className="flex items-center text-gray-800 hover:text-black transition-colors text-base font-medium group"
         >
