@@ -6,53 +6,9 @@ import { Revo, Linkedin, Envelope, Instagram } from "revoicons";
 import Button from "@/components/Button";
 import Link from "next/link";
 import Image from "next/image";
-import { IconCloud } from "@/components/ui/icon-cloud";
+import { skills } from "@/components/skillsData";
 
 
-const slugs = [
-  "typescript",
-  "javascript",
-  "dart",
-  "java",
-  "react",
-  "flutter",
-  "android",
-  "html5",
-  "css3",
-  "nodedotjs",
-  "express",
-  "nextdotjs",
-  "prisma",
-  "amazonaws",
-  "postgresql",
-  "firebase",
-  "nginx",
-  "vercel",
-  "testinglibrary",
-  "jest",
-  "cypress",
-  "docker",
-  "git",
-  "jira",
-  "github",
-  "gitlab",
-  "visualstudiocode",
-  "androidstudio",
-  "sonarqube",
-  "figma",
-];
-
-function IconCloudDemo() {
-  const images = slugs.map(
-    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
-  );
-
-  return (
-    <div className="relative flex size-full items-center justify-center overflow-hidden">
-      <IconCloud images={images} />
-    </div>
-  );
-}
 
 
 export default function Home() {
@@ -149,7 +105,7 @@ export default function Home() {
 
                       <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
                         <Image
-                          src="/card1-img.png"
+                          src="/card 4.png"
                           alt="card1"
                           width={500}
                           height={500}
@@ -184,8 +140,8 @@ export default function Home() {
 
                       <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
                         <Image
-                          src="/test.png"
-                          alt="E-Commerce Screenshot"
+                          src="/card2-img.png"
+                          alt="Kidney Stone Detection Model"
                           width={600}
                           height={400}
                         />
@@ -220,8 +176,8 @@ export default function Home() {
 
                       <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
                         <Image
-                          src="/test.png"
-                          alt="E-Commerce Screenshot"
+                          src="/card3-img.png"
+                          alt="PyLib"
                           width={600}
                           height={400}
                         />
@@ -287,7 +243,7 @@ export default function Home() {
           </section>
 
           {/* Tools Section */}
-          <section id="tools" className="min-h-[70vh] w-full flex flex-col justify-center items-center">
+          {/* <section id="tools" className="min-h-[70vh] w-full flex flex-col justify-center items-center">
             <h2 className="text-xl md:text-3xl text-center font-medium mt-16 md:mt-0 mb-8 md:mb-24 text-accent">I spend most of my days <br /> working with these tools</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-12 w-full pb-16 md:pb-0">
@@ -312,14 +268,55 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </section>
+          </section> */}
 
           {/* Skills Section */}
-          <section id="skills" className="min-h-screen w-full flex flex-col justify-center items-center md:-mt-32">
-            <h2 className="text-xl md:text-3xl text-center font-medium mb-8 md:mb-24 text-accent">Skills that help me build<br /> extraordinary products</h2>
+          <section id="skills" className="py-24 px-6">
+            <div className="max-w-6xl mx-auto">
 
-            <div className="w-full max-w-4xl h-[500px]">
-              <IconCloudDemo />
+              <h2 className="text-4xl font-semibold text-[#1a1a1a] text-center">
+                Skills
+              </h2>
+
+              <p className="text-center text-gray-600 mt-3">
+                A curated set of tools I work with
+              </p>
+
+              <div className="mt-20 space-y-16">
+                {skills.map((group) => (
+                  <div key={group.category}>
+                    <h3 className="mb-6 text-gray-700 font-medium">
+                      {group.category}
+                    </h3>
+
+                    <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 gap-6">
+                      {group.items.map((skill) => (
+                        <motion.div
+                          key={skill.name}
+                          whileHover={{ y: -6 }}
+                          transition={{ type: "spring", stiffness: 300 }}
+                          className="group relative rounded-2xl bg-white p-6
+                                     shadow-sm hover:shadow-md transition
+                                     flex items-center justify-center"
+                        >
+                          <img
+                            src={skill.icon}
+                            alt={skill.name}
+                            className="h-10 w-10 opacity-80 group-hover:opacity-100 transition"
+                          />
+
+                          {/* hover label */}
+                          <span className="absolute -bottom-6 text-xs text-gray-500
+                                           opacity-0 group-hover:opacity-100 transition">
+                            {skill.name}
+                          </span>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
             </div>
           </section>
 
