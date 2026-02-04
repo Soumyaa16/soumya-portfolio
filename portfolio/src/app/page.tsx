@@ -105,7 +105,7 @@ export default function Home() {
 
                       <div className="flex-1 mt-4 md:mt-0 md:ml-6 relative h-full">
                         <Image
-                          src="/card 4.png"
+                          src="/card1.png"
                           alt="card1"
                           width={500}
                           height={500}
