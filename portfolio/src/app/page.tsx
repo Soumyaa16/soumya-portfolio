@@ -328,7 +328,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
               {[
-                { text: "Working with Soumya was a fantastic experience. He delivered on time and exceeded expectations.", name: "Sarah Johnson", color: "#FFF2BD", rotate: 3 },
+                { text: "Working with Soumya was a fantastic experience. She delivered on time and exceeded expectations.", name: "Sarah Johnson", color: "#FFF2BD", rotate: 3 },
                 { text: "The product design and development were seamless. Highly recommend!", name: "Michael Lee", color: "#DDE9FF", rotate: -5 },
                 { text: "Amazing attention to detail and great communication throughout.", name: "Amit Sharma", color: "#FFC2D7", rotate: 2 },
               ].map((t, i) => (
@@ -358,7 +358,7 @@ export default function Home() {
               {[
                 { text: "LINKEDIN", icon: <Linkedin className="w-6 h-6" />, href: "https://www.linkedin.com/in/soumyadubeyy/" },
                 { text: "INSTAGRAM", icon: <Instagram className="w-6 h-6" />, href: "https://www.instagram.com/yourprofile" },
-                { text: "TWITTER / X", icon: <Envelope className="w-6 h-6" />, href: "https://twitter.com/yourprofile" },
+                { text: "TWITTER / X", icon: <Envelope className="w-6 h-6" />, href: "https://x.com/kdsoumya10" },
                 { text: "EMAIL", icon: <Envelope className="w-6 h-6" />, href: "mailto:kdsoumya10@gmail.com" },
               ].map((item, i) => (
                 <a
@@ -382,7 +382,7 @@ export default function Home() {
           <section id="footer" className="h-fit w-full px-4 pt-8 md:pt-16 pb-4">
             <div className="flex flex-row justify-between items-center text-accent/70 text-xs md:text-sm">
               <div>©2025 - Soumya Dubey</div>
-              <div>Engineered by <Link href="https://soumyaya.vercel.app/" target="_blank"><span className="underline underline-offset-4 decoration-accent/70 cursor-pointer hover:text-accent">this guy.</span></Link></div>
+              <div>Designed by <Link href="https://www.maybetarun.in/" target="_blank"><span className="underline underline-offset-4 decoration-accent/70 cursor-pointer hover:text-accent">this guy.</span></Link></div>
             </div>
           </section>
 
