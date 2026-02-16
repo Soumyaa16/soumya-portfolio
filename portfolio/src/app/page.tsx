@@ -7,6 +7,7 @@ import Button from "@/components/Button";
 import Link from "next/link";
 import Image from "next/image";
 import { skills } from "@/components/skillsData";
+import { X } from "lucide-react";
 
 
 
@@ -358,7 +359,7 @@ export default function Home() {
               {[
                 { text: "LINKEDIN", icon: <Linkedin className="w-6 h-6" />, href: "https://www.linkedin.com/in/soumyadubeyy/" },
                 { text: "INSTAGRAM", icon: <Instagram className="w-6 h-6" />, href: "https://www.instagram.com/yourprofile" },
-                { text: "TWITTER / X", icon: <Envelope className="w-6 h-6" />, href: "https://x.com/kdsoumya10" },
+                { text: "TWITTER / X", icon: <X className="w-6 h-6" />, href: "https://x.com/kdsoumya10" },
                 { text: "EMAIL", icon: <Envelope className="w-6 h-6" />, href: "mailto:kdsoumya10@gmail.com" },
               ].map((item, i) => (
                 <a
